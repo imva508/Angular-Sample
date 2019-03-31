@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
     }`]
 })
 export class ServerComponent {
+    id:number =1;
+    status:boolean = true;
 }
