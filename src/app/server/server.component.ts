@@ -8,6 +8,16 @@ import { Component } from '@angular/core';
     }`]
 })
 export class ServerComponent {
-    id:number =1;
-    status:boolean = true;
+    id: number = 0;
+    online: boolean = true;
+
+    constructor() {
+        this.id = (+Math.random().toFixed(2) *100).toFixed(0);
+        this.online = Math.random() > 0.5 ? true : false;
+    }
+
+    getColor() {
+        return this.online ? 'green' : 'red';
+    }
+
 }
