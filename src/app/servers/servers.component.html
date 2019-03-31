@@ -1,3 +1,4 @@
 <button class="btn btn-primary" [disabled] = "allowNewServer">Add server</button>
+<p [innerText] = "allowNewServer ? 'cannot add servers' : 'can add servers'"></p>
 <app-server></app-server>
 <app-server></app-server>
